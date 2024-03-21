@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="mst">
       <InputSection />
-      <Visualizer />
+      <Visualizer nodeCount={10} />
       <TimeComplexity time={10}/>
     </div>
   );
