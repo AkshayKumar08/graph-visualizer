@@ -1,8 +1,10 @@
-const Button = (props) => {
+import './Button.css'; 
+
+const Button = ({ buttonName, onClick }) => {
     return (
-        <>
-            <button>{props.name}</button>
-        </>
+        <button className="custom-button" onClick={onClick}>
+            {buttonName}
+        </button>
     );
 }
 

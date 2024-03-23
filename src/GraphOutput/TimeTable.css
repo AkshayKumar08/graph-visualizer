@@ -1,0 +1,15 @@
+.table-container {
+    margin: 0.5rem auto; 
+    width: fit-content;
+}
+
+.example-table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Full width */
+}
+
+.example-table th, .example-table td {
+    border: 1px solid #ddd; /* Add borders to table cells */
+    padding: 8px; /* Add padding to table cells */
+    text-align: center; /* Center-align text */
+}

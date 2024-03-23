@@ -1,9 +1,9 @@
 import DisjointSet from "../DataStructure/DisjointSet";
 
-const Krushkal = (graph) => {
+const krushkalMST = (graph) => {
     const edges = [];
-    for(const source in graph.getAdjecencyList()) {
-        for(const {destination, weight} of graph.getAdjecencyList()[source]){
+    for(const source in graph.adjecencyList) {
+        for(const {destination, weight} of graph.adjecencyList[source]){
             edges.push([source, destination, weight]);
         }
     }
@@ -12,7 +12,9 @@ const Krushkal = (graph) => {
 
     let total = 0;
     const minimumSpanningTree = [];
-    const disjointSet = new DisjointSet(Object.keys(graph.getAdjecencyList()).length);
+    const disjointSet = new DisjointSet(Object.keys(graph.adjecencyList).length);
+    const startTime = Date.now();
+
     for(var [source, destination, weight] of edges){
         source = parseInt(source);
         destination = parseInt(destination);
@@ -22,10 +24,13 @@ const Krushkal = (graph) => {
             total += weight;
         }
     }
-
-    console.log("Krushkal's MST", total);
-    console.log(minimumSpanningTree);
-    return minimumSpanningTree;
+    const endTime = Date.now();
+    const time = endTime - startTime;
+    return {
+        krushkalTime: time,
+        minimumSpanningTree,
+        totalWeight: total
+    };
 }
 
-export default Krushkal;
+export default krushkalMST;

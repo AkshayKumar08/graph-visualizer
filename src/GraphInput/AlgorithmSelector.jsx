@@ -1,11 +1,16 @@
-const AlgorithmSelector = () => {
+import React from 'react';
+import './AlgorithmSelector.css';
+
+const AlgorithmSelector = ({ options, value, onChange }) => {
     return (
-        <>
-        <select name="cars" id="cars">
-            <option value="volvo">Krushkal's</option>
-            <option value="saab">Prim's</option>
-        </select>
-        </>
+        <div className="selector-container">
+            <label htmlFor="graph-type" className="selector-label">Graph Type: &nbsp;</label>
+            <select id="graph-type" value={value} onChange={onChange} className="selector-dropdown">
+                {options.map((option, index) => (
+                    <option key={index} value={option.value}>{option.label}</option>
+                ))}
+            </select>
+        </div>
     );
 }
 

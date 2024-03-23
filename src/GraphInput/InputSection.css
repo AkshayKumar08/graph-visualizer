@@ -1,0 +1,13 @@
+.input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; 
+    margin: 1rem; 
+}
+
+.input-section-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}

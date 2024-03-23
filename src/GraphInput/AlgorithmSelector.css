@@ -1,0 +1,11 @@
+.selector-container{
+    display: flex;
+    margin: 0.5rem 1rem;
+}
+.selector-dropdown {
+    flex: 1;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}

@@ -1,0 +1,6 @@
+.graph-container {
+    margin: 0rem 10rem 10rem 10rem;
+    border: 1px solid #ccc;
+    overflow: auto;
+    border-radius: 5px; 
+}

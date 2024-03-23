@@ -1,0 +1,10 @@
+.input-container{
+    margin: 0.5rem 1rem;
+}
+
+.input-field {
+    padding: 8px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
