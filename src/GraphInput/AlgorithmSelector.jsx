@@ -1,6 +1,13 @@
 import React from 'react';
 import './AlgorithmSelector.css';
 
+/**
+ * AlgorithmSelector component allows users to select graph type from a dropdown.
+ * @param {Object} options - Array of options for the dropdown.
+ * @param {string} value - Currently selected value.
+ * @param {function} onChange - Function to handle onChange event.
+ * @returns {JSX.Element} AlgorithmSelector component.
+ */
 const AlgorithmSelector = ({ options, value, onChange }) => {
     return (
         <div className="selector-container">

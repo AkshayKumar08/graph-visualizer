@@ -1,5 +1,11 @@
 import './TimeTable.css'
 
+/**
+ * TimeTable component displays the runtime of Krushkal's and Prim's algorithms in milliseconds.
+ * @param {number} krushkalTime - Runtime of Krushkal's algorithm in milliseconds.
+ * @param {number} primsTime - Runtime of Prim's algorithm in milliseconds.
+ * @returns {JSX.Element} TimeTable component.
+ */
 const TimeTable = ({ krushkalTime, primsTime }) => {
     return (
         <div className="table-container">
