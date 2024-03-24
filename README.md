@@ -1,10 +1,77 @@
-# Getting Started with Create React App
+# Minimum Spanning Tree Visualizer
+
+
+This project is a visualization tool for Minimum Spanning Tree (MST) algorithms implemented using React. It allows users to visualize the Kruskal's and Prim's algorithms on randomly generated connected graphs.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Algorithm Implementations
+### Kruskal's Algorithm
+The krushkalMST function implements Kruskal's algorithm for finding the Minimum Spanning Tree of a graph.
+
+### Prim's Algorithm
+The primsMST function implements Prim's algorithm for finding the Minimum Spanning Tree of a graph
+
+## Data Structures
+### Disjoint Set
+The DisjointSet class implements the Disjoint Set data structure, which is used in Kruskal's algorithm.
+### ConnectedGraph 
+The ConnectedGraph class generates a connected graph using the Erdős–Rényi model and provides methods for transforming the graph for visualization.
+
+## Components
+
+### InputSection
+The InputSection component allows users to input the number of vertices for the graph and select the MST algorithm
+
+### AlgorithmSelector
+The AlgorithmSelector component provides a dropdown menu to select the MST algorithm (Kruskal's, Prim's, or both).
+
+### InputSize
+The InputSize component consists of an input field to input the number of vertices for the graph.
+
+### Button
+The Button component represents a clickable button used to trigger the generation of the MST.
+
+### TimeTable
+The TimeTable component displays the runtime of Kruskal's and Prim's algorithms in milliseconds.
+
+### Visualizer
+The Visualizer component is the main component responsible for rendering the MST visualization using the ForceGraph2D library.
+
+
+## Dependencies
+
+* React: JavaScript library for building user interfaces.
+* react-force-graph: React component for 3D force-directed graph visualization.
+* graphology: JavaScript graph library.
+* graphology-generators: Library for generating graph structures
+
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/AkshayKumar08/graph-visualizer.git
+```
+
+### Navigate to the project directory:
+
+```bash
+cd graph-visualizer
+```
+
+### Install dependencies:
+
+```bash
+npm install
+```
+
+### Start the development server:
+
 
 ### `npm start`
 
