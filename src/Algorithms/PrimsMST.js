@@ -54,4 +54,4 @@ const primsMST = (graph) => {
     };
 }
 
-export default primsMST;
+module.exports = primsMST;

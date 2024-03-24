@@ -1,4 +1,4 @@
-import DisjointSet from "../DataStructure/DisjointSet";
+const DisjointSet = require("../DataStructure/DisjointSet");
 
 /**
  * Function to find the minimum spanning tree using Kruskal's algorithm.
@@ -53,4 +53,4 @@ const krushkalMST = (graph) => {
     };
 }
 
-export default krushkalMST;
+module.exports = krushkalMST;

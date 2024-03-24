@@ -53,4 +53,4 @@ class DisjointSet {
     }
 }
 
-export default DisjointSet;
+module.exports = DisjointSet;

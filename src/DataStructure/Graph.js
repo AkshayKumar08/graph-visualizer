@@ -1,5 +1,5 @@
-import Graph from 'graphology';
-import erdosRenyi from 'graphology-generators/random/erdos-renyi';
+const Graph = require("graphology");
+const erdosRenyi = require("graphology-generators/random/erdos-renyi");
 
 /**
  * Class representing a connected graph generator.
@@ -110,4 +110,4 @@ class ConnectedGraph {
     }
 }
 
-export default ConnectedGraph;
+module.exports = ConnectedGraph;
